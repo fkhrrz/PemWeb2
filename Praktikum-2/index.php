@@ -13,6 +13,7 @@
     <select id="content-selector" class="form-select mb-4" onchange="setContent(this.value)">
       <option value="get">Get Form</option>
       <option value="post">Post Form</option>
+      <option value="logic">Logic Control</option>
     </select>
     <div id="content"></div>
   </div>
@@ -20,7 +21,12 @@
   <script type="text/javascript">
     function setContent(e) {
       const height = screen.height - document.getElementById("content-selector").offsetHeight
-      document.getElementById('content').innerHTML = '<iframe src="' + ((e == 'get') ? 'get-form.php' : 'post-form.php') + '" width="100%" height="' + height + '" frameborder="0" id="content" />'
+      let content
+      if (e == 'logic') {
+        document.getElementById('content').innerHTML = '<iframe src="get-form.php?logic=true" width="100%" height="' + height + '" frameborder="0" id="content" />'
+      } else {
+        document.getElementById('content').innerHTML = '<iframe src="' + ((e == 'get') ? 'get-form.php' : 'post-form.php') + '" width="100%" height="' + height + '" frameborder="0" id="content" />'
+      }
     }
 
     (() => setContent('get'))()

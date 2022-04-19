@@ -31,11 +31,11 @@
             <label for="produk" class="form-label">Produk</label>
             <div id="produk">
               <input type="radio" class="btn-check" name="produk" id="tv" value="TV" autocomplete="off" required>
-              <label class="btn btn-outline-primary" for="tv">TV</label>
+              <label class="btn btn-outline-warning" for="tv">TV</label>
               <input type="radio" class="btn-check" name="produk" id="kulkas" value="Kulkas" autocomplete="off">
               <label class="btn btn-outline-primary" for="kulkas">Kulkas</label>
               <input type="radio" class="btn-check" name="produk" id="mesin-cuci" value="Mesin Cuci" autocomplete="off">
-              <label class="btn btn-outline-primary" for="mesin-cuci">Mesin Cuci</label>
+              <label class="btn btn-outline-info" for="mesin-cuci">Mesin Cuci</label>
             </div>
           </div>
           <div class="mb-3">
