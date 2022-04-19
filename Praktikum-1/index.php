@@ -20,7 +20,7 @@
 
   <div class="container">
     <h3 class="text-center mt-5">Daftar Nilai Siswa</h3>
-    <div class="table-responsive mt-1   ">
+    <div class="table-responsive mt-1">
       <table class="table table-striped table-hover">
         <thead>
           <tr>
